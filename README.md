@@ -37,9 +37,9 @@ Si vous avez VS Code, vous pouvez simplement lancer le débogage (appuyez sur `F
 
 #### Méthode B : Installation manuelle
 
-Alternativement, vous pouvez installer manuellement les dépendances en utilisant pip :
+Alternativement, vous pouvez installer manuellement les dépendances en utilisant uv et pip :
 
-    pip install -r requirements.txt
+    pip install uv && uv pip install -r requirements.txt
 
 ### 4. Configurer l'environnement
 
