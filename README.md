@@ -55,7 +55,7 @@ Remplacez `votre_clé_api_openai_ici` par votre véritable clé API OpenAI. Vous
 
 Pour exécuter le code d'exemple, naviguez vers le fichier Python. Par exemple :
 
-    python 01_first_agent.py
+    python3 01_first_agent.py
 
 Cela exécutera l'agent et affichera la sortie dans le terminal.
 
