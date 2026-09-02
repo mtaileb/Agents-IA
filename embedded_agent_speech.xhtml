@@ -1,0 +1,33 @@
+# Listing 8.1 01_embedded_agent_speech.xhtml (agent uniquement)
+
+<footer>    #1
+    <div>Obtenez une <strong>clé éphémère client</strong> (valable brièvement) :</div>
+    <pre class="kbd"># PowerShell (jq non requis)
+    (Invoke-RestMethod -Uri "https://api.openai.com/v1/realtime/sessions" -Method POST `
+    -Headers @{ Authorization = "Bearer $env:OPENAI_API_KEY" } `
+    -ContentType "application/json"
+    -Body '{"model":"gpt-4o-realtime-preview-2025-06-03"}').client_secret.value</pre>
+    <div>En production, générez la clé sur votre backend et transmettez-la au navigateur après authentification.</div>
+</footer>    #1
+
+<!-- #2
+Option : Bash (commenté). Décommentez la section ci-dessous si vous préférez utiliser curl + jq pour obtenir la clé éphémère.
+
+<div>Obtenez une <strong>clé éphémère client</strong> en utilisant Bash :</div>
+<pre class="kbd"># Bash (curl + jq)
+curl -s -X POST "https://api.openai.com/v1/realtime/sessions" \
+-H "Authorization: Bearer $OPENAI_API_KEY" \
+-H "Content-Type: application/json" \
+-d '{"model":"gpt-4o-realtime-preview-2025-06-03"}' | jq -r '.client_secret.value'
+</pre>
+-->
+const agent = new RealTimeAgent({
+    name: 'Assistant',
+    instructions: 'Vous êtes un assistant vocal utile et concis. Parlez naturellement et gardez les réponses brèves, sauf si on vous demande des détails.',
+});
+#4
+
+#1 Montre comment générer une clé éphémère à partir de votre clé OpenAI en utilisant PowerShell
+#2 Exemple de commande Bash pour générer une clé éphémère. Décommentez cette section pour utiliser Bash.
+#3 Crée un agent vocal interactif en temps réel à partir du SDK agents
+#4 Modifiez les instructions selon votre cas d'usage particulier.
