@@ -1,6 +1,6 @@
 Ce dépôt contient le code des exemples d'agents. Le code démontre comment créer et exécuter un agent d'IA en utilisant les outils et les API compatibles avec le standard OpenAI.
 
-## Instructions d'installation de l'environnement Python + Claude Desktop
+## Instructions d'installation de l'environnement Python + serveurs MCP
 
 ### 1. Cloner le dépôt
 
