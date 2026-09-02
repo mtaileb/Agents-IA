@@ -1,6 +1,6 @@
 Ce dépôt contient le code des exemples d'agents. Le code démontre comment créer et exécuter un agent d'IA en utilisant les outils et les API compatibles avec le standard OpenAI.
 
-## Instructions d'installation
+## Instructions d'installation de l'environnement Python + Claude Desktop
 
 ### 1. Cloner le dépôt
 
@@ -63,3 +63,33 @@ Cela exécutera l'agent et affichera la sortie dans le terminal.
 
   * Assurez-vous d'utiliser l'interpréteur Python correct qui correspond à votre environnement.
   * Le fichier `.env` ne doit pas être partagé ou committé dans le contrôle de version pour garder votre clé API sécurisée.
+
+## Installation de Claude Desktop
+
+### Prérequis : Installation de Node.js
+
+Claude Desktop nécessite Node.js pour fonctionner. Sur Linux et WSL (Windows Subsystem for Linux), la méthode recommandée est **nvm** (Node Version Manager), qui permet de gérer plusieurs versions de Node.js sans privilèges administrateur.
+
+#### Installation de nvm
+
+Exécutez la commande suivante pour installer nvm :
+
+```bash
+curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.39.7/install.sh | bash
+```
+**💡 Astuce importante** : Si vous rencontrez l'erreur `Failed to clone nvm repo` ou un avertissement concernant `REMOTE REPO IDENTIFICATION HAS CHANGED`, cela est probablement dû à une variable d'environnement `NVM_INSTALL_GITHUB_REPO` mal configurée. Pour résoudre ce problème, exécutez :
+```bash
+unset NVM_INSTALL_GITHUB_REPO
+```
+Puis relancez la commande d'installation ci-dessus.
+
+Si le problème persiste, vous pouvez forcer l'installation par script (sans Git) avec :
+```bash
+curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.39.7/install.sh | METHOD=script bash
+```
+
+Ensuite :
+```bash
+nvm install --lts
+nvm use --lts
+```
