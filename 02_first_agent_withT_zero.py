@@ -36,3 +36,7 @@ result = Runner.run_sync(
 
 print(result.final_output)
 
+#1 Spécifie explicitement le modèle à utiliser
+#2 Fixe la température à 0,0 afin de garantir des réponses plus déterministes et reproductibles
+#3 Borne le nombre de jetons générés en sortie
+#4 Laisse les autres paramètres à leurs valeurs par défaut
