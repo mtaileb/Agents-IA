@@ -11,11 +11,13 @@ Public : ingénieurs support · Ton : clair et neutre · Limiter chaque recherch
 à **3 minutes** · Longueur maximale du résumé : **≤ 120 mots**. #3
 
 Exemple 1    #4
+
 Entrée : "Où se trouve le document sur la limite de taux de l'API 2023 ?" #4
 Emplacement choisi : **A** #4
 Résultat : Trouvé – Lien et extrait fournis (110 mots). #4
 
 Exemple 2    #4
+
 Entrée : "Tarification actuelle des concurrents pour le forfait intermédiaire" #4
 
 Emplacement choisi : **B** #4
