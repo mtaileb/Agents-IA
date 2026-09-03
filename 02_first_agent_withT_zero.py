@@ -17,7 +17,7 @@ You are a research planning assistant.
 agent = Agent(
     name="Research Planner", 
     instructions=instructions,
-    model="gpt-4.1",    #1
+    model="gpt-5.6-luna",    #1
     model_settings=ModelSettings(
         temperature=0.0,    #2
         max_tokens=150,    #3
