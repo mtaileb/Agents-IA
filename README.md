@@ -6,8 +6,8 @@ Ce dépôt contient le code des exemples d'agents. Le code démontre comment cr�
 
 Pour commencer, clonez ce dépôt sur votre machine locale :
 
-    git clone https://github.com/cxbxmxcx/AI-Agent-Workflows.git
-    cd AI-Agent-Workflows
+    git clone https://github.com/cxbxmxcx/Agents-IA.git
+    cd Agents-IA
 
 ### 2. Créer votre environnement
 
