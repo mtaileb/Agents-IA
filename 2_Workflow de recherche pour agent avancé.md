@@ -36,11 +36,11 @@ aucun, répondre « Escalader ».
 
 ---
 
-# #1 Persona ou rôle
-# #2 Fournit une décision et des chemins multiples
-# #3 Utilise des mesures précises pour qualifier les tâches
-# #4 Fournit des exemples de décisions et de résultats
-# #5 Permet au LLM de réfléchir d'abord au problème
-# #6 Fournit des instructions positives
-# #7 Combine les résultats et réduit la complexité du workflow
+###### #1 Persona ou rôle
+###### #2 Fournit une décision et des chemins multiples
+###### #3 Utilise des mesures précises pour qualifier les tâches
+###### #4 Fournit des exemples de décisions et de résultats
+###### #5 Permet au LLM de réfléchir d'abord au problème
+###### #6 Fournit des instructions positives
+###### #7 Combine les résultats et réduit la complexité du workflow
 ```
